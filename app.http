@@ -1,0 +1,67 @@
+// CODING PRACICE 10
+
+//API 1:
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+###
+
+//API 2:
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+###
+
+//API 3:
+GET http://localhost:3000/states/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+###
+
+//API 4:
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+###
+
+//API 5:
+GET http://localhost:3000/districts/225/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+###
+
+//API 6:
+DELETE http://localhost:3000/districts/255/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+###
+
+//API 7:
+PUT http://localhost:3000/districts/155/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+###
+
+//API 8:
+GET http://localhost:3000/states/12/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgxMTExNjYxfQ.vdZ7QriY3GZRZ1DoXT5SRYBuZira5a-B_hxBcH-akUk
+###
